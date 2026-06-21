@@ -1,0 +1,11 @@
+let lista = [1, 2, 3, 4, 5, 6];
+function inverterArray(lista){
+    for(let i = 0; i < lista.length/2; i++){
+        let temp = lista[i];
+        lista[i] = lista[lista.length -1 - i];
+        lista[lista.length -1 - i] = temp;
+    }
+    return lista;
+}
+
+console.log(inverterArray(lista));
